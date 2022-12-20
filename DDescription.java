@@ -11,7 +11,7 @@ public class DDescription implements IDocument{
 		@Override
 		public String getContent() {
 			// TODO Auto-generated method stub
-			return ("Описание: " + description + " Автор: " + author + " \n");
+			return ("РћРїРёСЃР°РЅРёРµ: " + description + " РђРІС‚РѕСЂ: " + author + " \n");
 		}
 		@Override
 		public IDocument getState() {
@@ -20,7 +20,7 @@ public class DDescription implements IDocument{
 		}
 		@Override
 		public String toString() {
-			return "Описание: " + description + " Автор: " + author + " \n";
+			return "РћРїРёСЃР°РЅРёРµ: " + description + " РђРІС‚РѕСЂ: " + author + " \n";
 		}
 		
 		
