@@ -9,7 +9,7 @@ public class DBody implements IDocument{
 		@Override
 		public String getContent() {
 
-			return ("Основной текст: " + text + " \n");
+			return ("РћСЃРЅРѕРІРЅРѕР№ С‚РµРєСЃС‚: " + text + " \n");
 		}
 		@Override
 		public IDocument getState() {
@@ -18,7 +18,7 @@ public class DBody implements IDocument{
 		}
 		@Override
 		public String toString() {
-			return "Основной текст: " + text + " \n";
+			return "РћСЃРЅРѕРІРЅРѕР№ С‚РµРєСЃС‚: " + text + " \n";
 		}
 		
 }
