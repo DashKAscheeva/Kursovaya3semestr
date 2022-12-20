@@ -11,7 +11,7 @@ public class DHead implements IDocument{
 		@Override
 		public String getContent() {
 			// TODO Auto-generated method stub
-			return ("Заголовок: " + content + " Дата: " + date + " \n") ;
+			return ("Р—Р°РіРѕР»РѕРІРѕРє: " + content + " Р”Р°С‚Р°: " + date + " \n") ;
 		}
 		@Override
 		public IDocument getState() {
@@ -20,7 +20,7 @@ public class DHead implements IDocument{
 		}
 		@Override
 		public String toString() {
-			return "Заголовок: " + content + " Дата " + date + " \n";
+			return "Р—Р°РіРѕР»РѕРІРѕРє: " + content + " Р”Р°С‚Р° " + date + " \n";
 		}
 		
 		
