@@ -1,17 +1,17 @@
 package patterns;
 
-public class DDescription implements IDocument{
-	private String description;
-	private String author;
-		public DDescription (String description, String author) {
+public class DHead implements IDocument{
+	private String content;
+	private double date;
+		public DHead (String content, double date) {
 		super();
-		this.description = description;
-		this.author = author;
+		this.content = content;
+		this.date = date;
 		}
 		@Override
 		public String getContent() {
 			// TODO Auto-generated method stub
-			return ("Описание: " + description + " Автор: " + author + " \n");
+			return ("Заголовок: " + content + " Дата: " + date + " \n") ;
 		}
 		@Override
 		public IDocument getState() {
@@ -20,7 +20,7 @@ public class DDescription implements IDocument{
 		}
 		@Override
 		public String toString() {
-			return "Описание: " + description + " Автор: " + author + " \n";
+			return "Заголовок: " + content + " Дата " + date + " \n";
 		}
 		
 		
