@@ -8,10 +8,10 @@ public class Snapshot implements ISnapshot  {
 
 	public void editHeader() {
 
-		System.out.println("Изменение заголовка и даты: ");
-		System.out.println("Введите новый заголовок: ");
+		System.out.println("РР·РјРµРЅРµРЅРёРµ Р·Р°РіРѕР»РѕРІРєР° Рё РґР°С‚С‹: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРІС‹Р№ Р·Р°РіРѕР»РѕРІРѕРє: ");
 	    String head = scanner.nextLine();
-		System.out.println("Введите новую дату: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРІСѓСЋ РґР°С‚Сѓ: ");
 	    double date = scanner.nextDouble();
 	    scanner.nextLine();
 		parts[0] = new DHead(head, date);
@@ -19,10 +19,10 @@ public class Snapshot implements ISnapshot  {
 
 	public void editDescription() {    
 
-		System.out.println("Изменение Краткого содержания и автора: ");	
-		System.out.println("Введите новое содержание: ");
+		System.out.println("РР·РјРµРЅРµРЅРёРµ РљСЂР°С‚РєРѕРіРѕ СЃРѕРґРµСЂР¶Р°РЅРёСЏ Рё Р°РІС‚РѕСЂР°: ");	
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРІРѕРµ СЃРѕРґРµСЂР¶Р°РЅРёРµ: ");
 	    String description = scanner.nextLine();
-	    System.out.println("Введите нового автора: ");
+	    System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРІРѕРіРѕ Р°РІС‚РѕСЂР°: ");
 	    String author = scanner.nextLine();
 
 		parts[1] = new DDescription(description, author);
@@ -30,14 +30,14 @@ public class Snapshot implements ISnapshot  {
 
 	public void editBody() {
 
-		System.out.println("Изменение основного текста: ");	    
+		System.out.println("РР·РјРµРЅРµРЅРёРµ РѕСЃРЅРѕРІРЅРѕРіРѕ С‚РµРєСЃС‚Р°: ");	    
 		String body =  scanner.nextLine();
 		parts[2] = new DBody(body);
 	}
 
 	public void editLit() {
 
-		System.out.println("Изменение Литературы: ");
+		System.out.println("РР·РјРµРЅРµРЅРёРµ Р›РёС‚РµСЂР°С‚СѓСЂС‹: ");
 	    String lit =  scanner.nextLine();
 		parts[3] = new DLit(lit);
 	}
