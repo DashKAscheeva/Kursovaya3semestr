@@ -6,25 +6,25 @@ public class DocumentBuilder implements IDocumentBuilder {
 	@Override
 	public void makeHeader() {
 		// TODO Auto-generated method stub
-		parts[0] = new DHead("Курсовая работа ", 21.12);
+		parts[0] = new DHead("РљСѓСЂСЃРѕРІР°СЏ СЂР°Р±РѕС‚Р° ", 21.12);
 	}
 
 	@Override
 	public void makeDescription() {
 		// TODO Auto-generated method stub
-		parts[1] = new DDescription("Отчет по курсовой работе студента 3 курса Института радиотехники ", " Аркадий Попов");
+		parts[1] = new DDescription("РћС‚С‡РµС‚ РїРѕ РєСѓСЂСЃРѕРІРѕР№ СЂР°Р±РѕС‚Рµ СЃС‚СѓРґРµРЅС‚Р° 3 РєСѓСЂСЃР° РРЅСЃС‚РёС‚СѓС‚Р° СЂР°РґРёРѕС‚РµС…РЅРёРєРё ", " РђСЂРєР°РґРёР№ РџРѕРїРѕРІ");
 	}
 
 	@Override
 	public void makeBody() {
 		// TODO Auto-generated method stub
-		parts[2] = new DBody("Полупроводниковые приборы, используемые в каскадах тракта");
+		parts[2] = new DBody("РџРѕР»СѓРїСЂРѕРІРѕРґРЅРёРєРѕРІС‹Рµ РїСЂРёР±РѕСЂС‹, РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ РІ РєР°СЃРєР°РґР°С… С‚СЂР°РєС‚Р°");
 	}
 	
 	@Override
 	public void makeLit() {
 		// TODO Auto-generated method stub
-		parts[3] = new DLit("Искусство схемотехники Авторы: Пауль Хоровиц и Уинфилд Хилл ");
+		parts[3] = new DLit("РСЃРєСѓСЃСЃС‚РІРѕ СЃС…РµРјРѕС‚РµС…РЅРёРєРё РђРІС‚РѕСЂС‹: РџР°СѓР»СЊ РҐРѕСЂРѕРІРёС† Рё РЈРёРЅС„РёР»Рґ РҐРёР»Р» ");
 	}
 
 	@Override
