@@ -12,43 +12,43 @@ public static void main(String[] args) {
         int cikl = 0;
         Scanner chase = new Scanner(System.in);
         while(c!=5) {
-        	System.out.println("\nЧто вы хотите сделать?\n "
-        			+ "1. Вывести текущее положение\n "
-        			+ "2. Изменить текущее положение\n "
-        			+ "3. Вывести все варианты\n "
-        			+ "4. Вернуться к старой версии\n "
-        			+ "5. Завершить работу\n ");
+        	System.out.println("\nР§С‚Рѕ РІС‹ С…РѕС‚РёС‚Рµ СЃРґРµР»Р°С‚СЊ?\n "
+        			+ "1. Р’С‹РІРµСЃС‚Рё С‚РµРєСѓС‰РµРµ РїРѕР»РѕР¶РµРЅРёРµ\n "
+        			+ "2. РР·РјРµРЅРёС‚СЊ С‚РµРєСѓС‰РµРµ РїРѕР»РѕР¶РµРЅРёРµ\n "
+        			+ "3. Р’С‹РІРµСЃС‚Рё РІСЃРµ РІР°СЂРёР°РЅС‚С‹\n "
+        			+ "4. Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє СЃС‚Р°СЂРѕР№ РІРµСЂСЃРёРё\n "
+        			+ "5. Р—Р°РІРµСЂС€РёС‚СЊ СЂР°Р±РѕС‚Сѓ\n ");
         c = chase.nextInt();
         chase.nextLine();
         switch(c) {
         case 1: {
-        System.out.println("Текущее положение: \n" + careTaker.get(cikl)); 
+        System.out.println("РўРµРєСѓС‰РµРµ РїРѕР»РѕР¶РµРЅРёРµ: \n" + careTaker.get(cikl)); 
         break;}
         case 2:{
-        System.out.println("Введите новые строчки \n" +
-        "1. Заголовок, Дата\n"
-        + "2. Описание, Автор\n"
-        + "3. Основной текст\n"
-        + "4. Список литературы\n");
+        System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРІС‹Рµ СЃС‚СЂРѕС‡РєРё \n" +
+        "1. Р—Р°РіРѕР»РѕРІРѕРє, Р”Р°С‚Р°\n"
+        + "2. РћРїРёСЃР°РЅРёРµ, РђРІС‚РѕСЂ\n"
+        + "3. РћСЃРЅРѕРІРЅРѕР№ С‚РµРєСЃС‚\n"
+        + "4. РЎРїРёСЃРѕРє Р»РёС‚РµСЂР°С‚СѓСЂС‹\n");
         ISnapshot edit = Snapshot.getSnapshot();  
         IDocument docedit = edit.build(); 
         careTaker.add(docedit.getState());
         cikl++;
-        System.out.println("Текущее положение: \n" + careTaker.get(cikl));
+        System.out.println("РўРµРєСѓС‰РµРµ РїРѕР»РѕР¶РµРЅРёРµ: \n" + careTaker.get(cikl));
         break;}
         case 3: {
   	  	for(int i = 0; i < careTaker.size(); i++) { 
 		  IDocument value = careTaker.get(i);
-		  System.out.print("Вариант " + (i+1) + " :\n " + value + " \n");
+		  System.out.print("Р’Р°СЂРёР°РЅС‚ " + (i+1) + " :\n " + value + " \n");
 		} break;}
         case 4:{
-        System.out.println("Введите версию, к которой хотите вернуться: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ РІРµСЂСЃРёСЋ, Рє РєРѕС‚РѕСЂРѕР№ С…РѕС‚РёС‚Рµ РІРµСЂРЅСѓС‚СЊСЃСЏ: ");
   	  	int i = chase.nextInt();
-        System.out.println("Вы вернулись к версии " +  i + " \n" + careTaker.get(i-1));
-//        cikl = i-1;
+        System.out.println("Р’С‹ РІРµСЂРЅСѓР»РёСЃСЊ Рє РІРµСЂСЃРёРё " +  i + " \n" + careTaker.get(i-1));
+        cikl = i-1;
         break;}
         case 5:{
-        System.out.println("Прекращение работы ");
+        System.out.println("РџСЂРµРєСЂР°С‰РµРЅРёРµ СЂР°Р±РѕС‚С‹ ");
         break;}
         }
 	}  
