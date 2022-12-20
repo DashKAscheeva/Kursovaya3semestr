@@ -9,7 +9,7 @@ public class DLit implements IDocument{
 	@Override
 	public String getContent() {
 		// TODO Auto-generated method stub
-		return ("Список литературы: "+ text + " \n");
+		return ("РЎРїРёСЃРѕРє Р»РёС‚РµСЂР°С‚СѓСЂС‹: "+ text + " \n");
 	}
 	@Override
 	public IDocument getState() {
@@ -18,7 +18,7 @@ public class DLit implements IDocument{
 	}
 	@Override
 	public String toString() {
-		return "Список литературы: "+ text + " \n";
+		return "РЎРїРёСЃРѕРє Р»РёС‚РµСЂР°С‚СѓСЂС‹: "+ text + " \n";
 	}
 	
 	
